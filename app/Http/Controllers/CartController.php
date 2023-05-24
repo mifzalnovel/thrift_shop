@@ -140,7 +140,7 @@ class CartController extends Controller
                         ]);
                         return redirect()->back()->with('success', 'Update Product Successfully');
                     }   
-                    // add new product
+                    
                     $cart = Cart::create([
                         'user_id' => $user->id,
                         'order_id' => $order->id,
